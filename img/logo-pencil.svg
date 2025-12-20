@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="256.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 256 256" width="256.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1">
+<path d="M38 62C38 48.7452 48.7452 38 62 38L194 38C207.255 38 218 48.7452 218 62L218 194C218 207.255 207.255 218 194 218L62 218C48.7452 218 38 207.255 38 194L38 62Z" fill="#dcebf9" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M38 175.5L218 175.5" fill="none" opacity="1" stroke="#37474f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M38 128L218 128" fill="none" opacity="1" stroke="#37474f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M38 80.5L218 80.5" fill="none" opacity="1" stroke="#37474f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M80.5 218L80.5 38" fill="none" opacity="1" stroke="#37474f" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0.5" stroke-width="10"/>
+<g opacity="1">
+<path d="M149.786 150.616L142.38 163.429L139.755 181.71L151.255 188.304L165.817 176.897L174.13 162.522L149.786 150.616Z" fill="#dff0fe" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M139.755 181.71L137.224 199.335L151.255 188.304L139.755 181.71Z" fill="#37474f" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M210.125 46.0503L216.526 34.9645C218.33 31.8391 221.24 29.6101 224.725 28.6763C228.21 27.7426 231.849 28.2208 234.97 30.0224C241.417 33.7444 243.634 42.02 239.912 48.4667L233.512 59.5525L210.125 46.0503Z" fill="#b6dcfe" fill-rule="nonzero" opacity="1" stroke="none"/>
+<g opacity="1">
+<path d="M167.603 173.795C167.183 173.261 166.664 172.746 166.018 172.298C164.429 171.208 162.482 170.802 160.213 171.096C158.11 166.354 153.621 165.317 150.397 165.51C148.978 162.267 146.449 160.945 144.04 160.592L205.781 53.5747L229.167 67.0769L167.603 173.795Z" fill="#98ccfd" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+<g opacity="1">
+<path d="M204.356 56.0284L214.268 38.8619L237.656 52.3668L227.743 69.5333L204.356 56.0284Z" fill="#dff0fe" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</g>
+</g>
+</svg>

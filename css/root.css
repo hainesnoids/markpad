@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    --menu-bar-height: env(titlebar-area-height, 36px);
+    --nav-bar-width: 88px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: var(--font-monospace), monospace;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+            "FILL" 0,
+            "wght" 300,
+            "GRAD" 0,
+            "opsz" 40;
+    font-size: 28px;
+}
+
+body.color-scheme-dark {
+    --pal-bg-dark: #000000;
+    --pal-bg: #131313;
+    --pal-bg-light: #1d1d1d;
+    --pal-fg-dark: #aeaeae;
+    --pal-fg: #e1e1e1;
+    --pal-fg-light: #ffffff;
+    --pal-accent: #cddc39;
+}
+
+body.color-scheme-light {
+    --pal-bg-dark: #ffffff;
+    --pal-bg: #f4f4f4;
+    --pal-bg-light: #ececec;
+    --pal-fg-dark: #515151;
+    --pal-fg: #000000;
+    --pal-fg-light: #000000;
+    --pal-accent: #def31c;
+}
+
+a, a:visited {
+    color: var(--pal-accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--pal-bg-dark);
+    color: var(--pal-fg);
+    font-family: var(--font-sans-serif), sans-serif;
+    display: grid;
+    grid-template-columns: var(--nav-bar-width) auto;
+    grid-template-rows: var(--menu-bar-height) auto;
+    gap: 0;
+    grid-template-areas: "nav menu-bar" "nav page-content";
+}
+
+nav {
+    width: var(--nav-bar-width);
+    height: 100%;
+    padding: env(titlebar-area-height, 4px) 4px 4px;
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    background-color: var(--pal-bg);
+    border-color: var(--pal-bg-light);
+    border-style: solid;
+    border-width: 0;
+}
+
+nav .logo {
+    height: 54px;
+    margin: 4px auto 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li button {
+    border-radius: 12px;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pal-fg-dark);
+}
+
+nav li:not(.active) button:hover {
+    background-color: hwb(from var(--pal-fg) h w b / 0.1);
+}
+
+nav li:not(.active) button:active {
+    background-color: hwb(from var(--pal-fg) h w b / 0.2);
+}
+
+nav li.active button {
+    background-color: var(--pal-fg);
+    color: var(--pal-bg-light);
+}
+
+nav li span.material-symbols-outlined {
+    font-size: 28px;
+}
+
+nav li span.nav-label {
+    font-family: var(--font-monospace), monospace;
+    font-size: 11px;
+}
+
+menu {
+    width: 100%;
+    height: var(--menu-bar-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: menu-bar;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--pal-bg);
+    border-color: var(--pal-bg-light);
+    border-style: solid;
+    border-width: 0 1px 0 0;
+}
+
+menu li {
+    font-family: var(--font-monospace), monospace;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pal-fg-dark);
+    text-transform: lowercase;
+    padding: 6px;
+    user-select: none;
+    border-radius: 6px;
+}
+
+menu li:hover {
+    background-color: hwb(from var(--pal-fg) h w b / 0.1);
+    color: var(--pal-fg);
+}
+
+menu li:active,
+menu li.active {
+    background-color: var(--pal-fg);
+    color: var(--pal-bg-light);
+}
+
+menu sp {
+    -webkit-app-region: drag;
+    height: 100%;
+}
+
+.page-content-bounds {
+    grid-area: page-content;
+    background-color: var(--pal-bg);
+}
+
+.page-content-bounds::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0 -24px -24px 0;
+    background-color: var(--pal-bg-dark);
+    border: 1px solid var(--pal-bg-light);
+    border-radius: 8px;
+    z-index: 0;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.text-input {
+    display: block;
+    resize: none;
+    width: 50%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: var(--pal-fg);
+    padding: 6px;
+    font-family: var(--font-sans-serif), sans-serif;
+    font-size: 12pt;
+    outline: none;
+}
+
+.markdown-output {
+    background: var(--pal-bg);
+    border: 1px solid var(--pal-bg-light);
+    position: absolute;
+    width: calc(50% - 24px);
+    height: 100%;
+    right: 0;
+    top: 0;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.markdown-output p {
+    text-wrap: wrap;
+    margin: 0 0 12px;
+}
+
+sp {
+    display: flex;
+    flex: 1 1 0;
+}
+code {
+    font-family: var(--font-monospace), monospace;
+    font-size: 12px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Markpad",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "./",
+  "display_override": ["window-controls-overlay"],
+  "display": "standalone",
+  "prefer_related_applications": false
+}
