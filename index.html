@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/frameworks.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/alerts.css">
+    <link rel="stylesheet" href="css/menubar-disable.css">
     <!-- Scripts -->
     <script src="js/showdown.js"></script>
     <script src="js/index.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/alerts.js"></script>
+    <script src="js/pwa.js"></script>
 </head>
 <body class="color-scheme-dark">
     <div class="alerts"></div>
@@ -45,6 +48,12 @@
             </li>-->
             <sp></sp>
             <li class="nav-item">
+                <button class="theme-button" onclick="toggleColorScheme()">
+                    <span class="material-symbols-outlined">routine</span>
+                    <span class="nav-label">auto</span>
+                </button>
+            </li>
+            <li class="nav-item">
                 <button>
                     <span class="material-symbols-outlined">settings</span>
                     <span class="nav-label">settings</span>
@@ -63,8 +72,31 @@
         </menu>
         <div class="page-content-bounds">
             <main class="page-content">
-                <textarea class="text-input"># Markpad
-A really cool looking markdown note-taker</textarea>
+                <textarea class="text-input">
+<img src="img/logo.svg" alt="Markpad Logo" width="120" height="120" style="display: inline-block; float: left"><h1 style="width: auto; display: inline-block; margin: 0;">Markpad</h1>
+
+---
+
+Dead simple Markdown text editor.
+[https://markpad.ws4k.net](https://markpad.ws4k.net)
+
+<img src="example.png" alt="Markpad Logo" width="480">
+
+Copyright © 2026 Hainesnoids
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+                </textarea>
                 <div class="markdown-output">
                     <p>
                         <h1 id="markpad">Markpad</h1>

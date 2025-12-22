@@ -1,0 +1,18 @@
+a, a:visited {
+    color: var(--pal-accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+code {
+    font-family: var(--font-monospace), monospace;
+    font-size: 12px;
+}
+hr {
+    border-color: var(--pal-fg);
+    border-width: 0 0 1px;
+}
+mark {
+
+}

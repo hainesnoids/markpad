@@ -1,0 +1,6 @@
+menu {
+    display: none;
+}
+.main {
+    grid-template-rows: 0 auto;
+}

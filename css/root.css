@@ -10,6 +10,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: var(--font-monospace), monospace;
+    background-color: var(--pal-bg);
 }
 
 .material-symbols-outlined {
@@ -38,15 +39,7 @@ body.color-scheme-light {
     --pal-fg-dark: #515151;
     --pal-fg: #000000;
     --pal-fg-light: #000000;
-    --pal-accent: #def31c;
-}
-
-a, a:visited {
-    color: var(--pal-accent);
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+    --pal-accent: #a9b329;
 }
 
 .main {
@@ -220,12 +213,7 @@ main {
     text-wrap: wrap;
     margin: 0 0 12px;
 }
-
 sp {
     display: flex;
     flex: 1 1 0;
-}
-code {
-    font-family: var(--font-monospace), monospace;
-    font-size: 12px;
 }

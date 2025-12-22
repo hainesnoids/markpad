@@ -1,9 +1,9 @@
-<img src="img/logo.svg" alt="Markpad Logo" width="120" height="120">
+<img src="img/logo.svg" alt="Markpad Logo" width="120" height="120" style="display: inline-block; float: left"><h1 style="width: auto; display: inline-block; margin: 0;">Markpad</h1>
 
-# Markpad
-Dead simple Markdown text editor.
+---
 
-Try at [https://markpad.ws4k.net](https://markpad.ws4k.net)
+Dead simple Markdown text editor.  
+[https://markpad.ws4k.net](https://markpad.ws4k.net)
 
 <img src="example.png" alt="Markpad Logo" width="480">
 
