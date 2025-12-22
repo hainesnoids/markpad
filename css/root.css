@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     position: relative;
+    --menu-bar-padding: calc(100vw - env(titlebar-area-width, 0) - env(titlebar-area-x, 0));
     --menu-bar-height: env(titlebar-area-height, 36px);
     --nav-bar-width: 88px;
 }
@@ -127,7 +128,7 @@ menu {
     align-items: center;
     grid-area: menu-bar;
     list-style: none;
-    padding: 0;
+    padding: 0 var(--menu-bar-padding) 0 0;
     margin: 0;
     background-color: var(--pal-bg);
     border-color: var(--pal-bg-light);
