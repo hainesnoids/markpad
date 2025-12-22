@@ -1,11 +1,9 @@
-<img src="img/logo.svg" alt="Markpad Logo" width="120" height="120" style="display: inline-block; float: left"><h1 style="width: auto; display: inline-block; margin: 0;">Markpad</h1>
-
----
+# <img src="img/logo.svg" alt="Markpad Logo" width="60" height="60" style="display: inline-block; margin: 0 -6px -9px 0"> Markpad
 
 Dead simple Markdown text editor.  
 [https://markpad.ws4k.net](https://markpad.ws4k.net)
 
-<img src="example.png" alt="Markpad Logo" width="480">
+<img src="example 2.png" alt="Markpad Logo" width="480">
 
 Copyright © 2026 Hainesnoids
 
