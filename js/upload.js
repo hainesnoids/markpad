@@ -5,7 +5,7 @@ async function uploadDocument() {
     const response = await fetch("https://phonehome.ws4k.net/api/hastebin", {
         method: "POST",
         headers: {
-            "Content-Type": "text/markdown" // if the hastebin server correctly uses Content-Type
+            "Content-Type": "text/plain" // if the hastebin server correctly uses Content-Type
         },
         body: text
     })
