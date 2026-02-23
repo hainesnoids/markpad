@@ -16,12 +16,16 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/alerts.css">
     <link rel="stylesheet" href="css/menubar-disable.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/read-only-document.css">
     <!-- Scripts -->
     <script src="js/showdown.js"></script>
     <script src="js/index.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/alerts.js"></script>
     <script src="js/pwa.js"></script>
+    <script src="js/libdialog.js"></script>
+    <script src="js/upload.js"></script>
 </head>
 <body class="color-scheme-dark">
     <div class="alerts"></div>
@@ -40,12 +44,12 @@
                     <span class="nav-label">sync</span>
                 </button>
             </li>
-            <!--<li class="nav-item">
-                <button>
-                    <span class="material-symbols-outlined">download</span>
+            <li class="nav-item">
+                <button onclick="promptDocumentUpload()">
+                    <span class="material-symbols-outlined">save</span>
                     <span class="nav-label">save</span>
                 </button>
-            </li>-->
+            </li>
             <sp></sp>
             <li class="nav-item">
                 <button class="theme-button" onclick="toggleColorScheme()">
@@ -105,6 +109,34 @@ Copyright © 2026 Hainesnoids
                 </div>
             </main>
         </div>
+        <dialog class="document-upload-dialog" closedby="any">
+            <span>Choose how to save this document:</span>
+            <div class="document-upload-options-carousel">
+                <button onclick="uploadDocumentChooseOutcome('disk')">
+                    <span class="material-symbols-outlined">hard_drive</span>
+                    <span class="nav-label">Save to disk</span>
+                </button>
+                <button onclick="uploadDocumentChooseOutcome('hastebin')">
+                    <span class="material-symbols-outlined">potted_plant</span>
+                    <span class="nav-label">Upload to Hastebin</span>
+                </button>
+            </div>
+        </dialog>
     </div>
+    <template id="libdialog">
+        <dialog class="libdialog-dialog">
+            <div class="libdialog-flex-row">
+                <div class="libdialog-icon-wrapper">
+                    <img class="libdialog-icon" src="libdialog/img/dialog-information.svg" alt="">
+                </div>
+                <div class="libdialog-text-content">
+                    <span class="libdialog-title"></span>
+                    <span class="libdialog-content"></span>
+                    <sp></sp>
+                    <div class="libdialog-buttons"></div>
+                </div>
+            </div>
+        </dialog>
+    </template>
 </body>
 </html>

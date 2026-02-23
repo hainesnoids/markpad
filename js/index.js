@@ -1,8 +1,7 @@
 function parseMarkdown() {
     const textInput = document.querySelector('.text-input').value;
     const parser = new showdown.Converter();
-    const result = parser.makeHtml(textInput);
-    document.querySelector('.markdown-output').innerHTML = result;
+    document.querySelector('.markdown-output').innerHTML = parser.makeHtml(textInput);
 }
 
 function main() {

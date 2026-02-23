@@ -11,6 +11,7 @@ body {
     height: 100vh;
     font-family: var(--font-monospace), monospace;
     background-color: var(--pal-bg);
+    color: var(--pal-fg);
 }
 
 .material-symbols-outlined {
@@ -35,7 +36,7 @@ body.color-scheme-dark {
 body.color-scheme-light {
     --pal-bg-dark: #ffffff;
     --pal-bg: #f4f4f4;
-    --pal-bg-light: #ececec;
+    --pal-bg-light: #e8e8e8;
     --pal-fg-dark: #515151;
     --pal-fg: #000000;
     --pal-fg-light: #000000;

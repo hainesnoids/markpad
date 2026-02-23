@@ -16,3 +16,32 @@ hr {
 mark {
 
 }
+dialog {
+    background-color: var(--pal-bg-dark);
+    border: 1px solid var(--pal-bg-light);
+    border-radius: 12px;
+    color: var(--pal-fg);
+    max-width: 632px;
+    padding: 12px;
+}
+dialog h1 {
+    margin: 0;
+}
+dialog::backdrop {
+    background: rgba(0,0,0,0.2);
+}
+button {
+    border-radius: 6px;
+    background: var(--pal-bg);
+    border: 1px solid var(--pal-bg-light);
+    color: var(--pal-fg);
+    font-size: 12pt;
+    padding: 4px 12px;
+}
+button:hover {
+    background: hwb(from var(--pal-fg) h w b / 0.1);
+}
+
+button:active {
+    background: hwb(from var(--pal-fg) h w b / 0.2);
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.document-upload-dialog {
+    flex-direction: column;
+}
+.document-upload-dialog:modal {
+    display: flex;
+}
+.document-upload-dialog > span {
+    margin: 0 2px 10px;
+}
+.document-upload-options-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.document-upload-options-carousel button {
+    border-radius: 12px;
+    background: var(--pal-bg);
+    border: 1px solid var(--pal-bg-light);
+    width: 112px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pal-fg-dark);
+}
+
+.document-upload-options-carousel button:hover {
+    background-color: hwb(from var(--pal-fg) h w b / 0.1);
+}
+
+.document-upload-options-carousel button:active {
+    background-color: hwb(from var(--pal-fg) h w b / 0.2);
+}
+
+nav li.active button {
+    background-color: var(--pal-fg);
+    color: var(--pal-bg-light);
+}
+
+.document-upload-options-carousel span.material-symbols-outlined {
+    font-size: 28px;
+}
+
+.document-upload-options-carousel span.nav-label {
+    font-family: var(--font-monospace), monospace;
+    font-size: 11px;
+}
+
+.libdialog-dialog {
+    min-width: 240px;
+    max-width: 632px;
+    min-height: 144px;
+    background: var(--pal-bg-dark);
+    border: 1px solid var(--pal-bg-light);
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+}
+.libdialog-flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+.libdialog-icon-wrapper {
+    width: 96px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libdialog-text-content {
+    width: auto;
+    height: 100%;
+    flex: 1;
+    padding: 5px 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.libdialog-icon {
+    height: 64px;
+}
+.libdialog-title {
+    display: inline;
+    vertical-align: top;
+    font-weight: 700;
+    margin: 6px 12px 6px 0;
+}
+.libdialog-content { /* Text Content */
+    color: var(--pal-fg);
+    font-size: 14px;
+    text-wrap: wrap;
+}
+.libdialog-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 8px;
+}
+.libdialog-button {
+    cursor: pointer;
+    background: var(--pal-bg);
+    border: 1px solid var(--pal-bg-light);
+    width: 82px;
+    height: 32px;
+    font-size: 14px;
+}
+/*.libdialog-button:hover {
+    background: var(--pal-bg);
+    border: 1px solid var(--pal-accent);
+}
+.libdialog-button:active {
+    background: hwb(from var(--pal-accent) h w b / 0.25);
+    border: 1px solid var(--pal-accent);
+}*/

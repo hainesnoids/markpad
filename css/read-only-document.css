@@ -1,0 +1,14 @@
+body.read-only-document .text-input,
+body.read-only-document .nav-item:not(:has(.theme-button)),
+body.read-only-document nav sp {
+    display: none;
+}
+body.read-only-document .markdown-output {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    position: static;
+    border-radius: 0;
+    margin: 0;
+}

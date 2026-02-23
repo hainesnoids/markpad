@@ -13,7 +13,6 @@ function saveToLocalStorage(source = 'auto') {
     setTimeout(() => { syncIcon.innerHTML = 'cloud_upload' }, 3000);
 }
 function loadFromLocalStorage() {
-    this.syncIcon = document.querySelector('.sync-button .material-symbols-outlined');
     const savedData = localStorage.getItem('saved-document');
     if (savedData) {
         //syncIcon.innerHTML = 'download';
